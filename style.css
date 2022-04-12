@@ -45,15 +45,26 @@ body {
     color: rgb(64, 64, 64);
     width: fit-content;
     margin-top: 150px;
+    transition-duration: 2s;
 }
-
+.button:hover {
+    padding: 18px 46px;
+    font-size: 13px;
+    text-decoration: none;
+    border: rgb(64, 64, 64) solid 2px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(64, 64, 64);
+    width: fit-content;
+    margin-top: 150px;
+    transition-duration: all to ease;
+}
 .sss {
     position:absolute;
     bottom: 125px;
     right: 225px;
 }
 .about {
-    height: 900px;
+    min-height: 900px;
     background-color: rgb(248, 250, 250);
 }
 .a3 {
@@ -252,6 +263,9 @@ body {
     justify-content: center;
     align-items: center;
 }
+.whitee {
+    width: 1440px;
+}
 .footer {
     width: 1440px;
     height: 314px;
@@ -273,4 +287,83 @@ body {
 .twit3 {
     margin-top: 44px;
     color: rgb(151, 151, 151);
+}
+.eee {
+    text-decoration: none
+}
+
+@media (max-width: 600px){
+    body {
+        width: 600px;
+    }
+
+    .about {
+        min-height: fit-content;
+    }
+
+    .i {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .t {
+        margin-left: 200px;
+        padding-bottom: 50px;
+    }
+    .i1 {
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: -150px;
+    }
+
+    .grid {
+        grid-template-columns: 480px;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "g1"
+                             "g2"
+                             "g3"
+                             "g4"
+                             "g5"
+                             "g6";
+       
+    }
+
+    .img6 {
+        width: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        padding-bottom: 125px;
+    }
+    .works {
+        height: fit-content;
+        width: 600px;
+    }
+    .footer {
+        width: 600px;
+        margin-top: -120px;
+    }
+    .twit {
+        margin-left: 190px;
+        width: fit-content;
+    }
+    .services {
+        height: fit-content;
+    }
+    .g1>.material-icons-outlined {
+        margin-top: 20px;
+        margin-left: 70px;
+        padding-bottom: 40px;
+    }
+    .white {
+        display: none;
+    }
+    .g6 {
+        margin-bottom: 45px;
+    }
+    .sss {
+        bottom: 125px;
+        right: 260px;
+    }
 }
